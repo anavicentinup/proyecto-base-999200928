@@ -2,6 +2,7 @@
     padding: o;
     margin: 0;
     box-sizing: border-box;
+    font-family: var(--font);
 }
 
 :root {
@@ -13,7 +14,10 @@
   --green-400: #138b80;
   --green-300: #2dca7a;
   --green-100: #dcf8c6;
+
+  --font: "roboto", sans-serif;
 }
+
 
 body{
  background-color: #FF6B09;
@@ -21,3 +25,4 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 background-attachment: fixed;
 background-size: cover;
 }
+
