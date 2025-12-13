@@ -162,7 +162,7 @@ width: 50px;
 .user-chat:hover {
   background-color: var(--grey-700);
   cursor: pointer;
-  border-left: 3px solid var(--green-400);
+  border-left: 3px solid var(--green-100);
 }
 
 
@@ -176,9 +176,9 @@ width: 50px;
 }
 .chat-header{
   background-color: var(--grey-700);
-  gap: 10px;
+ border-bottom: 2px solid var(--grey-800);
+ gap: 10px;
   padding: 10px;
-  border: none;
   display: flex;
   align-items: center;
   }
@@ -212,13 +212,14 @@ border-radius: 50%;
 .message{
   background-color: #dfdfe1;
    box-shadow: 6px 3px 12px 3px rgba(195,197,178,0.59);
--webkit-box-shadow: 6px 3px 12px 3px rgba(195,197,178,0.59);
--moz-box-shadow: 6px 3px 12px 3px rgba(195,197,178,0.59);
+    -webkit-box-shadow: 6px 3px 12px 3px rgba(195,197,178,0.59);
+    -moz-box-shadow: 6px 3px 12px 3px rgba(195,197,178,0.59);
   border-radius: 10px;
   text-align: start;
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 60%;
+  padding: 10px;
 }
 
 .content{
@@ -233,8 +234,6 @@ border-radius: 50%;
 .me {
   align-self: self-end;
   background-color: var(--green-100);
- 
- 
 }
 
 /*style para el footer*/
@@ -243,44 +242,57 @@ footer{
   
   background-color:var(--grey-500);
   display: flex;
-align-items: center;
-justify-content: space-between;
-gap: 10px;
-height: 50px;
-
-
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  gap:10px ;
 }
 
-footer button svg{
-  width: 20px;
-  height: 20px;
-  border-radius: 5px;
-  
-}
 
-footer form textarea{
+footer svg{
+  width: 25px;
+  height: 25px;
+  border-radius: 7px;
+  padding: 3px;
+  }
+
+textarea{
  background-color: white;
   resize: none;
-  border-radius: 20px;
-  flex: 1;
+  border-radius: 15px;
   border: none;
+  color:black;
+  text-align: center;
+  width: 100%;
+  outline: 3px;
 }
 
-
+footer form{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
 
 button{
   border: none;
+  cursor: pointer;
+  transition: all  1s;
 }
 .attach{
   background-color: var(--grey-400);
 }
 
 .send{
-  background-color: orange;
-  border-radius: 150px;
+  background-color: rgb(240, 199, 153);
+  border-radius: 20px;
+}
+footer .attach :hover{
+  transform: translateY(-5px);
 }
 
-
+footer .send:hover{
+transform: rotate(360deg);
+}
 
 
 /*celular*/
