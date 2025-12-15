@@ -44,6 +44,10 @@ box-shadow: 6px 3px 12px 3px rgba(232,238,67,0.59);
 -webkit-box-shadow: 6px 3px 12px 3px rgba(232,238,67,0.59);
 -moz-box-shadow: 6px 3px 12px 3px rgba(232,238,67,0.59);
 overflow: hidden;
+max-width: 1400px;
+margin: auto;
+max-height: 1000px;
+
 }
 
 
@@ -307,6 +311,7 @@ aside{
 }
 .app{
   display: flex;
+  grid-template-columns: 1fr;
 }
 
 }
