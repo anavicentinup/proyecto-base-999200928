@@ -173,6 +173,7 @@ width: 50px;
 .chat-panel{
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 }
 .chat-header{
   background-color: var(--grey-700);
@@ -207,10 +208,12 @@ border-radius: 50%;
   border-radius: 10px ;
   margin: 10px 10px;
   padding: 10px;
+  flex: 1;
+  overflow: scroll;
 }
 
 .message{
-  background-color: #dfdfe1;
+  background-color: var(--grey-300);
    box-shadow: 6px 3px 12px 3px rgba(195,197,178,0.59);
     -webkit-box-shadow: 6px 3px 12px 3px rgba(195,197,178,0.59);
     -moz-box-shadow: 6px 3px 12px 3px rgba(195,197,178,0.59);
@@ -239,7 +242,6 @@ border-radius: 50%;
 /*style para el footer*/
 
 footer{
-  
   background-color:var(--grey-500);
   display: flex;
   align-items: center;
@@ -259,12 +261,14 @@ footer svg{
 textarea{
  background-color: white;
   resize: none;
-  border-radius: 15px;
+  border-radius: 10px;
   border: none;
   color:black;
-  text-align: center;
+  text-align: start;
   width: 100%;
-  outline: 3px;
+}
+footer textarea:focus{
+  outline: 2px solid rgb(98, 98, 95);
 }
 
 footer form{
