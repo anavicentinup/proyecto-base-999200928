@@ -38,7 +38,9 @@ const chatsData = [
 
 const renderChats = (list) => {
     $listchat.innerHTML = ""
-
+if (list.length === 0){
+    $listchat.innerHTML = `<h3 class= "empty" >No se encontraron resultados</h3>`
+}
     list.forEach((chat) =>
         $listchat.innerHTML += `
  <li class="user-chat">
